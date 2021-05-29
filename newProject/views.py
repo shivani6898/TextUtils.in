@@ -5,7 +5,9 @@ def index(request):
     return render(request,"index2.html")
 
 def about(request):
-    return HttpResponse("This is about")
+    return render(request,"about.html")
+def contact(request):
+    return render(request,'contact.html')
 def analyze(request):
     djText= request.POST.get('text','default')
     Removepunc = request.POST.get('rempunc', 'off')

@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="./">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about">About Us</a>
@@ -37,39 +37,8 @@
     </div>
   </div>
 </nav>
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Welcome to Textutils!</strong> You can do anything with your text.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
 
-    <div class="container">
-      <form action="/analyze" method="post">
-        {% csrf_token %}
-        <div class="mb-3">
-          <label for="text" class="form-label">Enter Your Text nd see the magic</label>
-          <textarea class="form-control" name="text" id="text" rows="3" style="margin-top: 0px;margin-bottom: 0px;height: 170px;"></textarea>
-        </div>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" name="rempunc" type="checkbox" id="removepunc">
-          <label class="form-check-label" for="removepunc">Remove Punctuation</label>
-        </div>
-         <div class="form-check form-switch">
-          <input class="form-check-input" name="Uppercase" type="checkbox" id="fullcaptilize">
-          <label class="form-check-label" for="fullcaptilize">Full Captilize</label>
-        </div>
-         <div class="form-check form-switch">
-          <input class="form-check-input" name="newlinerem" type="checkbox" id="lineremover">
-          <label class="form-check-label" for="lineremover">Line Remover</label>
-        </div>
-         <div class="form-check form-switch">
-          <input class="form-check-input" name="spacerem" type="checkbox" id="spaceremover">
-          <label class="form-check-label" for="spaceremover">Space Remover</label>
-        </div>
-        <button type="submit" class="btn btn-success m-2">Analyze text</button>
-      </form>
-
-    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
